@@ -32,7 +32,7 @@ jobs:
             password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ycjin/incheon
+        run: docker build -t ycjin/incheon .
     
       - name: Push docker image
         run: docker push ycjin/incheon:latest 
